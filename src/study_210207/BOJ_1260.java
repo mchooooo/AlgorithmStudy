@@ -1,7 +1,6 @@
 package study_210207;
 
 import java.util.*;
-//bfs 수정필요
 public class BOJ_1260 {
     public static List<Integer> dfsList = new ArrayList<>();
     public static List<Integer> bfsList = new ArrayList<>();
@@ -31,12 +30,7 @@ public class BOJ_1260 {
         visited[V] = true;
         bfsList.add(V);
         Queue<Integer> q = new LinkedList<>();
-
-        for(int i = 1; i <= N; i++){
-            if(!visited[i]&&arr[V][i]==1){
-                q.add(i);
-            }
-        }
+        q.add(V);
         bfs(arr,visited,q);
 
         for(int i = 0; i < dfsList.size(); i++){
@@ -60,13 +54,14 @@ public class BOJ_1260 {
     }
 
     public static void bfs(int[][] arr, boolean[] visited, Queue<Integer> q){
-        int n = q.poll();
-        if(visited[n]) return;
-        visited[n] = true;
-        bfsList.add(n);
-        for(int i = 1; i < arr.length; i++){
-            if(!visited[i]&&arr[n][i]==1){
-                bfs(arr,visited,q);
+        while(!q.isEmpty()){
+            int n = q.poll();
+            for(int i = 1; i<arr.length; i++){
+                if(!visited[i] && arr[n][i]==1){
+                    q.add(i);
+                    visited[i] = true;
+                    bfsList.add(i);
+                }
             }
         }
     }
