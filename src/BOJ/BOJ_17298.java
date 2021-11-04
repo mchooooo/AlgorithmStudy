@@ -1,11 +1,11 @@
-package study_201028;
+package BOJ;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Stack;
 
-public class Num_17298 {
+public class BOJ_17298 {
 
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

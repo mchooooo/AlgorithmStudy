@@ -1,9 +1,9 @@
-package study_201028;
+package BOJ;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Num_9465 {
+public class BOJ_9465 {
 
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

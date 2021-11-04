@@ -1,8 +1,8 @@
-package study_201028;
+package BOJ;
 
 import java.util.Scanner;
 
-public class Num_10026 {
+public class BOJ_10026 {
 
     private static boolean[][] visit;
     private static char[][] arr;

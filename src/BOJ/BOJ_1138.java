@@ -1,8 +1,8 @@
-package study_201028;
+package BOJ;
 
 import java.util.Scanner;
 
-public class Num_1138 {
+public class BOJ_1138 {
 
     public static void main(String[] args){
 
