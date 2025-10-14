@@ -9,7 +9,7 @@ import java.util.Scanner;
 * for i in len
 *   for j in len
 *      for k in len{
-*         arr[i][j] = ?? 까먹음 ㅋㅋ
+*         arr[i][j] = ik + kj
 * }
 * 메모리초과..
 * */

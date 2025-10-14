@@ -18,14 +18,11 @@ public class BOJ_1138 {
         boolean[] visit = new boolean[n];
         int temp = 0;
         int pos = 0;
-        while(true){
-            if(pos==ans.length) break;
-            for(int i = 0; i < n; i++){
-                if(!visit[arr[i]]){
-                    ans[arr[i]] = i+1;
+        while (pos != ans.length) {
+            for (int i = 0; i < n; i++) {
+                if (!visit[arr[i]]) {
+                    ans[arr[i]] = i + 1;
                     visit[arr[i]] = true;
-                }else{
-
                 }
             }
             pos++;
